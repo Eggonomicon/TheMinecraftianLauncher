@@ -77,7 +77,7 @@ public class MapFilterDialog extends JDialog {
 		}
 
 		type.setModel(new DefaultComboBoxModel(new String[] {"Client", "Server"}));
-		origin.setModel(new DefaultComboBoxModel(new String[] {I18N.getLocaleString("MAIN_ALL"), "FTB", I18N.getLocaleString("FILTER_3THPARTY")}));
+		origin.setModel(new DefaultComboBoxModel(new String[] {I18N.getLocaleString("MAIN_ALL"), "Minecraftian", I18N.getLocaleString("FILTER_3THPARTY")}));
 		compatiblePack.setModel(new DefaultComboBoxModel(packs.toArray()));
 
 		apply.addActionListener(new ActionListener() {

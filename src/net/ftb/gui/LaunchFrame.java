@@ -188,7 +188,7 @@ public class LaunchFrame extends JFrame {
 		DownloadUtils thread = new DownloadUtils();
 		thread.start();
 		
-		Logger.logInfo("FTBLaunch starting up (version "+ version + ")");
+		Logger.logInfo("MinecraftianLaunch starting up (version "+ version + ")");
 		Logger.logInfo("Java version: "+System.getProperty("java.version"));
 		Logger.logInfo("Java vendor: "+System.getProperty("java.vendor"));
 		Logger.logInfo("Java home: "+System.getProperty("java.home"));
@@ -248,6 +248,11 @@ public class LaunchFrame extends JFrame {
 						FileOutputStream fos = new FileOutputStream(credits);
 						OutputStreamWriter osw = new OutputStreamWriter(fos);
 						
+						osw.write("-------------------------------" + System.getProperty("line.separator"));
+						osw.write("Minecraftian Launcher and Modpack Credits " + System.getProperty("line.separator"));
+						osw.write("-------------------------------" + System.getProperty("line.separator"));
+						osw.write("Eggonomicon" + System.getProperty("line.separator"));
+						osw.write("-------------------------------" + System.getProperty("line.separator") + System.getProperty("line.separator"));
 						osw.write("FTB Launcher and Modpack Credits " + System.getProperty("line.separator"));
 						osw.write("-------------------------------" + System.getProperty("line.separator"));
 						osw.write("Launcher Developers:" + System.getProperty("line.separator"));

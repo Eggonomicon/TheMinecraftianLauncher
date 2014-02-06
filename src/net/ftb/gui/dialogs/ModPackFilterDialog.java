@@ -69,7 +69,7 @@ public class ModPackFilterDialog extends JDialog {
 		}
 
 		mcVersion.setModel(new DefaultComboBoxModel(mcVersions.toArray()));
-		origin.setModel(new DefaultComboBoxModel(new String[] {I18N.getLocaleString("MAIN_ALL"), "FTB", I18N.getLocaleString("FILTER_3THPARTY")}));
+		origin.setModel(new DefaultComboBoxModel(new String[] {I18N.getLocaleString("MAIN_ALL"), "Minecraftian", I18N.getLocaleString("FILTER_3THPARTY")})); /* Eggonomicon 2-5-14 */
 		availability.setModel(new DefaultComboBoxModel(new String[]{ I18N.getLocaleString("MAIN_ALL"),  I18N.getLocaleString("FILTER_PUBLIC"),  I18N.getLocaleString("FILTER_PRIVATE")}));
 
 		origin.setSelectedItem(pane.origin);

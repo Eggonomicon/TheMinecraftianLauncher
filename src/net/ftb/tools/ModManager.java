@@ -97,7 +97,7 @@ public class ModManager extends JDialog {
 			String md5 = "";
 			try {
 				URL url_ = new URL(urlString);
-				Logger.logWarn("In downloadUrl :" + url_); /* Added by Eggonomicon 2-4-14 */
+				//Logger.logWarn("In downloadUrl :" + url_); /* Added by Eggonomicon 2-4-14 */
 				byte data[] = new byte[1024];
 				connection = (HttpURLConnection) url_.openConnection();
 				connection.setAllowUserInteraction(true);

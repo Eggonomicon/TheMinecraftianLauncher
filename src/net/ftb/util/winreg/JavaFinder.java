@@ -112,7 +112,7 @@ public class JavaFinder
             List<JavaInfo> java32 = new ArrayList<JavaInfo>();
             List<JavaInfo> java64 = new ArrayList<JavaInfo>();
 
-            Logger.logInfo("The FTB Launcher has found the following Java versions installed:");
+            Logger.logInfo("The Minecraftian Launcher has found the following Java versions installed:");
             for (int i = 0; i < javas.size(); i++)
             {
                 Logger.logInfo(javas.get(i).toString());

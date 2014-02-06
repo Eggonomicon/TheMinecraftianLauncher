@@ -68,7 +68,7 @@ public class Settings extends Properties {
 
 	public void save() {
 		try {
-			store(new FileOutputStream(configFile), "FTBLaunch Config File");
+			store(new FileOutputStream(configFile), "MinecraftianLaunch Config File");
 		} catch (IOException e) {
 			Logger.logError("Failed to save settings", e);
 		}

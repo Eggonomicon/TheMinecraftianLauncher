@@ -61,7 +61,7 @@ public class OSUtils {
 			Logger.logError(e.getMessage(), e);
 		}
 		Logger.logWarn("Failed to get path for current directory - falling back to user's home directory.");
-		return System.getProperty("user.dir") + "//FTB Pack Install";
+		return System.getProperty("user.dir") + "//Minecraftian Pack Install";
 	}
 
 	/**

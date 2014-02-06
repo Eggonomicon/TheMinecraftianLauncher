@@ -50,7 +50,7 @@ public class DownloadUtils extends Thread {
 	public static String getCreeperhostLink(String file) throws NoSuchAlgorithmException {
 		String resolved = (downloadServers.containsKey(Settings.getSettings().getDownloadServer())) ? "http://" + downloadServers.get(Settings.getSettings().getDownloadServer()) : "http://launcher.theminecraftian.com";
 		resolved += "/FTB2/" + file;
-		Logger.logWarn("In getCreeperhostLink :" + resolved); /* Added by Eggonomicon 2-4-14 */
+		//Logger.logWarn("In getCreeperhostLink :" + resolved); /* Added by Eggonomicon 2-4-14 */
 		HttpURLConnection connection = null;
 		try {
 			connection = (HttpURLConnection) new URL(resolved).openConnection();
@@ -74,7 +74,7 @@ public class DownloadUtils extends Thread {
 	public static String getStaticCreeperhostLink(String file) {
 		String resolved = (downloadServers.containsKey(Settings.getSettings().getDownloadServer())) ? "http://" + downloadServers.get(Settings.getSettings().getDownloadServer()) : "http://launcher.theminecraftian.com";
 		resolved += "/FTB2/static/" + file;
-		Logger.logWarn("In getCreeperhostLink :" + resolved); /* Added by Eggonomicon 2-4-14 */
+		//Logger.logWarn("In getCreeperhostLink :" + resolved); /* Added by Eggonomicon 2-4-14 */
 		HttpURLConnection connection = null;
 		try {
 			connection = (HttpURLConnection) new URL(resolved).openConnection();
@@ -168,7 +168,7 @@ public class DownloadUtils extends Thread {
 		Scanner scanner = null;
 		String resolved = (downloadServers.containsKey(Settings.getSettings().getDownloadServer())) ? "http://" + downloadServers.get(Settings.getSettings().getDownloadServer()) : "http://launcher.theminecraftian.com";
 		resolved += "/md5/FTB2/" + url;
-		Logger.logWarn("In backupIsValid :" + resolved); /* Added by Eggonomicon 2-4-14 */
+		//Logger.logWarn("In backupIsValid :" + resolved); /* Added by Eggonomicon 2-4-14 */
 		HttpURLConnection connection = null;
 		try {
 			connection = (HttpURLConnection) new URL(resolved).openConnection();
@@ -181,9 +181,9 @@ public class DownloadUtils extends Thread {
 			if(response != 200 || (content == null || content.isEmpty())) {
 				for(String server : backupServers.values()) {
 					resolved = "http://" + server + "/md5/FTB2/" + url.replace("/", "%5E");
-					Logger.logWarn("In backupIsValid :" + resolved); /* Added by Eggonomicon 2-4-14 */
+					//Logger.logWarn("In backupIsValid :" + resolved); /* Added by Eggonomicon 2-4-14 */
 					connection = (HttpURLConnection) new URL(resolved).openConnection();
-					Logger.logWarn("In backupIsValid :" + resolved); /* Added by Eggonomicon 2-4-14 */
+					//Logger.logWarn("In backupIsValid :" + resolved); /* Added by Eggonomicon 2-4-14 */
 					response = connection.getResponseCode();
 					if(response == 200) {
 						scanner = new Scanner(connection.getInputStream());
@@ -203,7 +203,7 @@ public class DownloadUtils extends Thread {
 			}
 		}
 		String result = fileMD5(file);
-		Logger.logWarn("In backupIsValid :" + result); /* Added by Eggonomicon 2-4-14 */
+		//Logger.logWarn("In backupIsValid :" + result); /* Added by Eggonomicon 2-4-14 */
 		Logger.logInfo("Local: " + result.toUpperCase());
 		Logger.logInfo("Remote: " + content.toUpperCase());
 		return content.equalsIgnoreCase(result);
@@ -226,7 +226,7 @@ public class DownloadUtils extends Thread {
 			return "";
 		}
 		URL fileUrl = file.toURI().toURL();
-		Logger.logWarn("In String fileHash( :" + fileUrl); /* Added by Eggonomicon 2-4-14 */
+		//Logger.logWarn("In String fileHash( :" + fileUrl); /* Added by Eggonomicon 2-4-14 */
 		MessageDigest dgest = null;
 		try {
 			dgest = MessageDigest.getInstance(type);

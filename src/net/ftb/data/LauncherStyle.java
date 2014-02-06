@@ -87,7 +87,7 @@ public class LauncherStyle extends Properties {
 		this.filterInnerTextColor = loadColor("filterInnerTextColor", this.filterInnerTextColor);
 		
 		try {
-			this.store(new FileOutputStream(filename), "FTB Style File");
+			this.store(new FileOutputStream(filename), "Minecraftian Style File");
 		} catch (FileNotFoundException e) {
 			Logger.logWarn("Could not save style", e);
 		} catch (IOException e) {
