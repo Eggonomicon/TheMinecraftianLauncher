@@ -40,7 +40,7 @@ project.ext {
 }
 
 group = 'net.ftb'
-version = '1.0.0'
+version = '1.0.1'
 description = "Minecraftian Launcher"
 sourceCompatibility = 1.6
 targetCompatibility = 1.6

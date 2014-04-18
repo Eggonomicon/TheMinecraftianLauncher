@@ -3,7 +3,7 @@
 
   <groupId>net.ftb</groupId>
   <artifactId>Minecraftian_Launcher</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <packaging>jar</packaging>
 
   <name>Minecraftian Launcher</name>
